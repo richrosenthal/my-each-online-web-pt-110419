@@ -9,14 +9,15 @@ def my_each(array)
  
     array
   else
-    puts "Hey! No block was given!"
+    error_phrase = "Hey! No block was given!"
+    error_phrase
   end
 end
 
 collection = [1,2,3,4]
 
 my_each(collection) do |word|
-  puts "#{word}"
+  puts word
 end
 
 
